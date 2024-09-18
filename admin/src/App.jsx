@@ -4,15 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import Add from "./pages/add/Add";
 import List from "./pages/list/List";
 import Order from "./pages/orders/Order";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
-
-  const url="http://localhost:4000";
+  const url = "https://bbc-peach.vercel.app";
   return (
     <div>
-      <ToastContainer/>
+      <ToastContainer />
       <Navbar />
       <hr />
       <div className="app-content">

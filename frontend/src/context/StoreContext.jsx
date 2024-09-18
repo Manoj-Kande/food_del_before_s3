@@ -11,7 +11,7 @@ const StoreContextProvider=(props)=>{
         
     });
 
-    const url="http://localhost:4000";
+    const url="https://bbc-peach.vercel.app";
 
     const [token,setToken]=useState("");
     const [food_list,setFoodList]=useState([]);
