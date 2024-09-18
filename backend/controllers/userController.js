@@ -24,7 +24,7 @@ const loginUser = async (req, res) => {
         res.json({ success: true, message: "Logged In Successfully", token: token });
     } catch (err) {
         console.log(err);
-        res.json({ success: false, message: "Error" });
+        res.json({ success: false, message: "Error" ,errr:err});
     }
 };
 
