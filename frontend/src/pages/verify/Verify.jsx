@@ -23,6 +23,7 @@ const Verify = () => {
       if(response.data.success){
         console.log("order placed successfully");
         navigate("/myorders");
+        toast.success("Order Placed Successfully");
       }else{
         toast.error("Order Failed");
         navigate("/");
@@ -31,6 +32,9 @@ const Verify = () => {
     }
 
     useEffect(()=>{
+        {
+          console.log("Entered into Verify Page");
+        }
         verifyPayment();
     },[]);
 
