@@ -9,6 +9,7 @@ import LoginPopUp from "./components/loginpopup/LoginPopUp";
 import { ToastContainer } from 'react-toastify';
 import Verify from "./pages/verify/Verify";
 import MyOrders from "./pages/myorders/MyOrders";
+import ExploreMenu from "./components/exploremenu/ExploreMenu";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -22,6 +23,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/menu"  element={<ExploreMenu></ExploreMenu>} />
           <Route path="/order" element={<PlaceOrder />} />
           <Route path="/verify" element={<Verify/>} ></Route>
           <Route path="/myorders" element={<MyOrders/>} ></Route>
